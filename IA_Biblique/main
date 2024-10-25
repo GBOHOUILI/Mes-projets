@@ -1,0 +1,40 @@
+# importation des fonctions depuis les différents modules
+'''from importation import importer_donnees
+from chunks import creer_chunks
+from question_encoder import encoder_question
+from vector_store import rechercher_vector_store'''
+
+def main():
+    """
+    Fonction principale pour gérer l'importation des données, l'encodage de la question, et la recherche dans Qdrant.
+    """
+    # Étape 1 : Importer les données (par exemple, le texte biblique)
+    donnees = importer_donnees()
+
+    # Étape 2 : Optionnel - Créer des chunks si nécessaire (selon la taille des données)
+    chunks = creer_chunks(donnees)
+
+    # Boucle d'interaction avec l'utilisateur
+    while True:
+        # Étape 3 : Demander à l'utilisateur de poser une question
+        question = input("Entrez votre question : ")
+
+        # Étape 4 : Encoder la question
+        question_embedding = encoder_question(question)
+
+        # Étape 5 : Rechercher dans la base de données vectorielle (Qdrant)
+        resultats = rechercher_vector_store(question_embedding)
+
+        # Étape 6 : Afficher les résultats
+        print("Résultats de la recherche :")
+        for result in resultats:
+            print(result)
+
+        # Option pour sortir de la boucle
+        continuer = input("Voulez-vous poser une autre question ? (o/n) : ")
+        if continuer.lower() != 'o':
+            break
+
+# Exemple d'appel de la fonction main
+if __name__ == "__main__":
+    main()
