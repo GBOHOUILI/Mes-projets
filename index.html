@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Biblique</title>
+    <style>
+        /* Style de base pour la page */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa; /* Bleu ciel */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        /* Container principal, élargi */
+        .container {
+            text-align: center;
+            background-color: rgba(12, 113, 228, 0.534);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 70%; /* Augmentation de la largeur */
+            max-width: 1200px;
+        }
+        
+        /* Logo */
+        .logo img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        /* Titre principal */
+        h1 {
+            color: #f5faf9; /* Bleu foncé pour le titre */
+            font-size: 3em;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease;
+        }
+        
+        /* Sous-titre avec animation */
+        h2 {
+            color: #fcfafa;
+            margin-top: 0;
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease;
+        }
+        
+        /* Barre de saisie de questions */
+        .input-bar {
+            display: flex;  /* Utilisation de flexbox pour aligner sur la même ligne */
+            justify-content: center;  /* Centrer la barre et le bouton */
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .input-bar input[type="text"] {
+            width: 70%;  /* Largeur ajustée */
+            padding: 12px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: 1px solid #000000;
+        }
+        
+        .input-bar button {
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border: none;
+            background-color: #3b3c3dc9;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+        .input-bar button:hover {
+            background-color: #606263f3;
+        }
+        
+        /* Animation fade-in pour le texte */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        /* Style des boutons d'exemples de questions */
+        .example-btn {
+            display: inline-block;
+            background-color: #8e9092c9;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        /* Animation au survol des boutons */
+        .example-btn:hover {
+            transform: translateY(-3px);
+            background-color: #606263f3; /* Couleur plus foncée au survol */
+        }
+        
+        /* Section des exemples */
+        .examples {
+            margin-top: 10px;
+            animation: fadeIn 3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="bible.webp" alt="Logo IA Biblique">
+        </div>
+        
+        <!-- Titre principal -->
+        <h1>IA BIBLIQUE</h1>
+        <h2>Que voulez vous savoir sur la Bible ?</h2>
+        
+        <!-- Barre de saisie de questions avec bouton sur la même ligne -->
+        <div class="input-bar">
+            <input type="text" placeholder="Entrez votre question ici...">
+            <button>Envoyer</button>
+        </div>
+        
+        <!-- Exemples de questions -->
+        <div class="examples">
+            <button class="example-btn">Quel est le plus grand commandement ?</button>
+            <button class="example-btn">Que dit la Bible sur l'amour ?</button>
+            <button class="example-btn">Qu'est-ce que la foi selon la Bible ?</button>
+        </div>
+    </div>
+</body>
+</html>
+ 
