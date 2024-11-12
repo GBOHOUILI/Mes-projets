@@ -15,41 +15,41 @@
             height: 100vh;
             margin: 0;
         }
-        
+
         /* Container principal, élargi */
         .container {
             text-align: center;
-            background-color: rgba(12, 113, 228, 0.534);
+            background-color: white;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 30px;
             width: 70%; /* Augmentation de la largeur */
             max-width: 1200px;
         }
-        
+
         /* Logo */
         .logo img {
             width: 150px;
             margin-bottom: 20px;
         }
-        
+
         /* Titre principal */
         h1 {
-            color: #f5faf9; /* Bleu foncé pour le titre */
+            color: #01579b; /* Bleu foncé pour le titre */
             font-size: 3em;
             margin-bottom: 10px;
             animation: fadeIn 2s ease;
         }
-        
+
         /* Sous-titre avec animation */
         h2 {
-            color: #fcfafa;
+            color: #0288d1;
             margin-top: 0;
             font-size: 1.5em;
             margin-bottom: 30px;
             animation: fadeIn 2s ease;
         }
-        
+
         /* Barre de saisie de questions */
         .input-bar {
             display: flex;  /* Utilisation de flexbox pour aligner sur la même ligne */
@@ -57,30 +57,30 @@
             align-items: center;
             margin-bottom: 30px;
         }
-        
+
         .input-bar input[type="text"] {
             width: 70%;  /* Largeur ajustée */
             padding: 12px;
             font-size: 1.2em;
             border-radius: 5px;
-            border: 1px solid #000000;
+            border: 1px solid #0288d1;
         }
-        
+
         .input-bar button {
             padding: 12px 20px;
             font-size: 1.2em;
             border: none;
-            background-color: #3b3c3dc9;
+            background-color: #0288d1;
             color: white;
             border-radius: 5px;
             cursor: pointer;
             margin-left: 10px;
         }
-        
+
         .input-bar button:hover {
-            background-color: #606263f3;
+            background-color: #01579b;
         }
-        
+
         /* Animation fade-in pour le texte */
         @keyframes fadeIn {
             from {
@@ -90,11 +90,11 @@
                 opacity: 1;
             }
         }
-        
+
         /* Style des boutons d'exemples de questions */
         .example-btn {
             display: inline-block;
-            background-color: #8e9092c9;
+            background-color: #29b6f6;
             color: white;
             border: none;
             padding: 15px 30px;
@@ -104,13 +104,13 @@
             cursor: pointer;
             transition: transform 0.3s ease;
         }
-        
+
         /* Animation au survol des boutons */
         .example-btn:hover {
             transform: translateY(-3px);
-            background-color: #606263f3; /* Couleur plus foncée au survol */
+            background-color: #0288d1; /* Couleur plus foncée au survol */
         }
-        
+
         /* Section des exemples */
         .examples {
             margin-top: 10px;
@@ -119,22 +119,23 @@
     </style>
 </head>
 <body>
+
     <div class="container">
         <!-- Logo -->
         <div class="logo">
             <img src="bible.webp" alt="Logo IA Biblique">
         </div>
-        
+
         <!-- Titre principal -->
         <h1>IA BIBLIQUE</h1>
-        <h2>Que voulez vous savoir sur la Bible ?</h2>
-        
+        <h2>Posez vos questions sur la Bible</h2>
+
         <!-- Barre de saisie de questions avec bouton sur la même ligne -->
         <div class="input-bar">
             <input type="text" placeholder="Entrez votre question ici...">
-            <button>Envoyer</button>
+            <button>Poser la question</button>
         </div>
-        
+
         <!-- Exemples de questions -->
         <div class="examples">
             <button class="example-btn">Quel est le plus grand commandement ?</button>
@@ -142,6 +143,6 @@
             <button class="example-btn">Qu'est-ce que la foi selon la Bible ?</button>
         </div>
     </div>
+
 </body>
 </html>
- 

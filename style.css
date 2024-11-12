@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Bleu ciel */
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #00796b; /* Vert foncé */
+    color: white;
+    border-bottom: 5px solid #004d40; /* Bordure verte pour accentuer */
+}
+
+.bible-image {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.cross {
+    width: 20px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #00796b; /* Crois blanche avec bordure verte */
+    margin: 10px auto;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.chat-container {
+    width: 60%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-window {
+    height: 400px;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f0f0f0; /* Couleur légère pour le chat */
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #004d40; /* Vert foncé pour la zone de saisie */
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+button {
+    background-color: #ff9800; /* Bouton orange pour attirer l'attention */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+button:hover {
+    background-color: #e65100; /* Couleur plus foncée au survol */
+}
+
+/* Style pour les exemples de questions */
+.example-questions {
+    background-color: #ffeb3b; /* Jaune clair pour attirer l'attention */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 60%;
+    font-size: 1.1em;
+}
